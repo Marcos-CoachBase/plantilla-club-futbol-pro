@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "src": "assets/img/hero.jpg",
+    "title": "Late-night amateur football match under floodlights",
+    "creator": "PattayaPatrol",
+    "creator_url": "https://www.flickr.com/people/PattayaPatrol",
+    "license": "by-sa",
+    "license_version": "4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=188865091",
+    "source": "wikimedia"
+  },
+  "noticia-2": {
+    "src": "assets/img/noticia-2.jpg",
+    "title": "Find the subject",
+    "creator": "Georgie Pauwels",
+    "creator_url": "https://www.flickr.com/photos/53662163@N06",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/53662163@N06/12402061273",
+    "source": "flickr"
+  },
+  "hero-video": {
+    "src": "https://videos.pexels.com/video-files/2657261/2657261-hd_1280_720_24fps.mp4",
+    "title": "Captivating aerial view of a soccer match under stadium lights",
+    "creator": "K",
+    "creator_url": "https://www.pexels.com/@kelly/",
+    "license": "pexels",
+    "license_version": "",
+    "license_url": "https://www.pexels.com/license/",
+    "foreign_landing_url": "https://www.pexels.com/video/aerial-footage-of-a-game-of-soccer-2657261/",
+    "source": "pexels"
+  }
+}
