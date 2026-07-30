@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plantilla · Atlético Riomar</title>
+<meta name="description" content="Plantilla 2026/27 del Atlético Riomar con estadísticas por jugador: atributos, goles, asistencias y partidos disputados.">
+<meta name="theme-color" content="#0B2340">
+<meta property="og:title" content="Plantilla · Atlético Riomar">
+<meta property="og:description" content="Plantilla 2026/27 del Atlético Riomar con estadísticas por jugador: atributos, goles, asistencias y partidos disputados.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="manifest.webmanifest">
+<script>(function(){try{var t=localStorage.getItem("ar-theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark");}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<a href="#contenido" class="skip-link">Saltar al contenido</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <clipPath id="crest-clip" clipPathUnits="userSpaceOnUse">
+      <path d="M100,4 C100,4 20,26 20,26 L20,112 C20,170 54,206 100,226 C146,206 180,170 180,112 L180,26 C180,26 100,4 100,4 Z"/>
+    </clipPath>
+    <symbol id="crest" viewBox="0 0 200 230">
+      <path d="M100,4 C100,4 20,26 20,26 L20,112 C20,170 54,206 100,226 C146,206 180,170 180,112 L180,26 C180,26 100,4 100,4 Z" fill="#0B2340" stroke="#C9A227" stroke-width="4"/>
+      <g clip-path="url(#crest-clip)">
+        <rect x="-20" y="96" width="240" height="150" fill="#123059"/>
+        <polygon points="-20,4 260,54 260,100 -20,50" fill="#C9A227"/>
+      </g>
+      <circle cx="100" cy="120" r="47" fill="#F6F7FA" stroke="#C9A227" stroke-width="3"/>
+      <text x="100" y="136" text-anchor="middle" font-family="Oswald, sans-serif" font-weight="700" font-size="46" fill="#0B2340">AR</text>
+      <polygon points="100,180 103.2,188.2 112,188.4 105,193.6 107.6,202 100,197 92.4,202 95,193.6 88,188.4 96.8,188.2" fill="#E2BA3E"/>
+      <text x="100" y="217" text-anchor="middle" font-family="Oswald, sans-serif" font-weight="600" font-size="14" letter-spacing="1" fill="#F6F7FA">1978</text>
+    </symbol>
+  </defs>
+</svg>
+<div id="loader" aria-hidden="true">
+  <svg viewBox="0 0 200 230">
+    <path class="loader-fill" d="M100,4 C100,4 20,26 20,26 L20,112 C20,170 54,206 100,226 C146,206 180,170 180,112 L180,26 C180,26 100,4 100,4 Z"/>
+    <path class="loader-path" d="M100,4 C100,4 20,26 20,26 L20,112 C20,170 54,206 100,226 C146,206 180,170 180,112 L180,26 C180,26 100,4 100,4 Z"/>
+  </svg>
+</div>
+<div id="page-transition"></div>
+<div class="pro-cursor" data-pro-cursor></div>
+
+<header class="nav" data-nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="brand-crest" aria-hidden="true"><use href="#crest"></use></svg>
+      <span class="brand-text">
+        <span class="brand-name">Atlético Riomar</span>
+        <span class="brand-sub">Club Deportivo · 1978</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link" href="club.html">Club</a>
+      <a class="nav-link is-active" href="plantilla.html">Plantilla</a>
+      <a class="nav-link" href="matchcenter.html">Matchcenter</a>
+      <a class="nav-link" href="cantera.html">Cantera</a>
+      <a class="nav-link" href="noticias.html">Noticias</a>
+      <a class="nav-link" href="calendario.html">Calendario</a>
+      <a class="nav-link" href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switch" data-lang-switch>
+        <button type="button" class="is-active" data-lang="es">ES</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" data-theme-toggle>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+      </button>
+      <a href="contacto.html" class="btn btn-primary nav-cta magnetic" data-magnetic>Hazte socio</a>
+      <button class="nav-burger" type="button" aria-label="Abrir menú" aria-expanded="false" data-burger>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" data-mobile-menu aria-label="Navegación móvil">
+  <a href="index.html" class="">Inicio</a>
+  <a href="club.html" class="">Club</a>
+  <a href="plantilla.html" class="is-active">Plantilla</a>
+  <a href="matchcenter.html" class="">Matchcenter</a>
+  <a href="cantera.html" class="">Cantera</a>
+  <a href="noticias.html" class="">Noticias</a>
+  <a href="calendario.html" class="">Calendario</a>
+  <a href="contacto.html" class="">Contacto</a>
+  <a href="contacto.html" class="btn btn-primary">Hazte socio</a>
+</nav>
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumbs"><a href="index.html">Inicio</a> / Plantilla</p>
+    <p class="eyebrow">Primer equipo</p>
+    <h1>Plantilla 2026/27</h1>
+    <p>Dorsal, nombre, demarcación y estadísticas de cada jugador de la primera plantilla.</p>
+  </div>
+</section>
+
+<main id="contenido">
+
+<section class="section">
+  <div class="container">
+    <div class="team-banner reveal">
+      <img src="assets/img/team-banner.jpg" alt="Plantilla celebrando un gol en el campo" loading="lazy">
+      <div class="team-banner-inner">
+        <div><p class="eyebrow">Primer equipo</p><h2>Plantilla 2026/27</h2></div>
+        <div class="team-banner-meta">
+          <div><strong>Liga Regional Aficionados</strong><span>Competición</span></div>
+          <div><strong>Manuel Rodríguez</strong><span>Primer entrenador</span></div>
+          <div><strong>16</strong><span>Jugadores inscritos</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="sponsor-tier-label-lg">Cuerpo técnico</p>
+    <div class="staff-grid" style="margin-bottom:2.6rem;">
+      <div class="staff-card"><div class="staff-avatar">MR</div><div><strong>Manuel Rodríguez</strong><span>Primer entrenador</span></div></div>
+      <div class="staff-card"><div class="staff-avatar">LT</div><div><strong>Laura Tello</strong><span>Segunda entrenadora</span></div></div>
+      <div class="staff-card"><div class="staff-avatar">JM</div><div><strong>Javier Molina</strong><span>Preparador físico</span></div></div>
+      <div class="staff-card"><div class="staff-avatar">SG</div><div><strong>Sonia Grande</strong><span>Fisioterapeuta</span></div></div>
+    </div>
+
+    <div class="section-head">
+      <p class="eyebrow on-light">Plantilla</p>
+      <h2 class="section-title">Nuestros jugadores</h2>
+      <p class="section-lede">Filtra por posición, busca un jugador y pulsa sobre cualquier ficha para ver sus estadísticas de la temporada.</p>
+    </div>
+
+    <div class="player-toolbar" data-player-toolbar>
+      <input type="search" class="player-search" data-player-search placeholder="Buscar jugador…">
+      <button class="player-filter-btn is-active" data-player-filter="all">Todos</button>
+      <button class="player-filter-btn" data-player-filter="portero">Porteros</button>
+      <button class="player-filter-btn" data-player-filter="defensa">Defensas</button>
+      <button class="player-filter-btn" data-player-filter="centrocampista">Centrocampistas</button>
+      <button class="player-filter-btn" data-player-filter="delantero">Delanteros</button>
+    </div>
+
+    <div class="player-grid">
+      <div class="player-flip" data-player-card data-pos="portero" data-name="Álvaro Muñoz">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">1</div>
+            <img src="assets/img/jugadores/p01-alvaro-munoz.jpg" alt="Foto de Álvaro Muñoz" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Álvaro Muñoz</div>
+              <div class="pf-pos">Portero</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Álvaro Muñoz <span style="color:var(--gold-2);">#1</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 35, "Def": 84, "Fis": 75, "Tec": 74, "Vel": 49}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>10</strong></div><div><span>Goles</span><strong>0</strong></div><div><span>Asist.</span><strong>0</strong></div><div><span>Porterías a 0</span><strong>7</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="portero" data-name="Diego Salas">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">13</div>
+            <img src="assets/img/jugadores/p13-diego-salas.jpg" alt="Foto de Diego Salas" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Diego Salas</div>
+              <div class="pf-pos">Portero</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Diego Salas <span style="color:var(--gold-2);">#13</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 35, "Def": 87, "Fis": 78, "Tec": 64, "Vel": 57}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>11</strong></div><div><span>Goles</span><strong>0</strong></div><div><span>Asist.</span><strong>0</strong></div><div><span>Porterías a 0</span><strong>3</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="defensa" data-name="Rubén Castro">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">2</div>
+            <img src="assets/img/jugadores/p02-ruben-castro.jpg" alt="Foto de Rubén Castro" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Rubén Castro</div>
+              <div class="pf-pos">Defensa</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Rubén Castro <span style="color:var(--gold-2);">#2</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 35, "Def": 85, "Fis": 80, "Tec": 57, "Vel": 62}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>12</strong></div><div><span>Goles</span><strong>3</strong></div><div><span>Asist.</span><strong>0</strong></div><div><span>Tarjetas</span><strong>5</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="defensa" data-name="Iker Domínguez">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">3</div>
+            <img src="assets/img/jugadores/p03-iker-dominguez.jpg" alt="Foto de Iker Domínguez" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Iker Domínguez</div>
+              <div class="pf-pos">Defensa</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Iker Domínguez <span style="color:var(--gold-2);">#3</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 35, "Def": 82, "Fis": 84, "Tec": 66, "Vel": 68}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>12</strong></div><div><span>Goles</span><strong>3</strong></div><div><span>Asist.</span><strong>0</strong></div><div><span>Tarjetas</span><strong>2</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="defensa" data-name="Pablo Vargas">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">4</div>
+            <img src="assets/img/jugadores/p04-pablo-vargas.jpg" alt="Foto de Pablo Vargas" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Pablo Vargas</div>
+              <div class="pf-pos">Defensa</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Pablo Vargas <span style="color:var(--gold-2);">#4</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 35, "Def": 87, "Fis": 76, "Tec": 60, "Vel": 65}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>13</strong></div><div><span>Goles</span><strong>0</strong></div><div><span>Asist.</span><strong>4</strong></div><div><span>Tarjetas</span><strong>3</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="defensa" data-name="Marcos Ibáñez">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">5</div>
+            <img src="assets/img/jugadores/p05-marcos-ibanez.jpg" alt="Foto de Marcos Ibáñez" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Marcos Ibáñez</div>
+              <div class="pf-pos">Defensa</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Marcos Ibáñez <span style="color:var(--gold-2);">#5</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 42, "Def": 89, "Fis": 76, "Tec": 57, "Vel": 68}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>16</strong></div><div><span>Goles</span><strong>1</strong></div><div><span>Asist.</span><strong>2</strong></div><div><span>Tarjetas</span><strong>1</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="defensa" data-name="Nico Ferrer">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">15</div>
+            <img src="assets/img/jugadores/p15-nico-ferrer.jpg" alt="Foto de Nico Ferrer" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Nico Ferrer</div>
+              <div class="pf-pos">Defensa</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Nico Ferrer <span style="color:var(--gold-2);">#15</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 42, "Def": 90, "Fis": 75, "Tec": 65, "Vel": 59}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>16</strong></div><div><span>Goles</span><strong>1</strong></div><div><span>Asist.</span><strong>3</strong></div><div><span>Tarjetas</span><strong>5</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="centrocampista" data-name="Hugo Prieto">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">6</div>
+            <img src="assets/img/jugadores/p06-hugo-prieto.jpg" alt="Foto de Hugo Prieto" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Hugo Prieto</div>
+              <div class="pf-pos">Centrocampista</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Hugo Prieto <span style="color:var(--gold-2);">#6</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 68, "Def": 66, "Fis": 71, "Tec": 83, "Vel": 71}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>15</strong></div><div><span>Goles</span><strong>3</strong></div><div><span>Asist.</span><strong>4</strong></div><div><span>Tarjetas</span><strong>1</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="centrocampista" data-name="Adrián Cortés">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">8</div>
+            <img src="assets/img/jugadores/p08-adrian-cortes.jpg" alt="Foto de Adrián Cortés" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Adrián Cortés</div>
+              <div class="pf-pos">Centrocampista</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Adrián Cortés <span style="color:var(--gold-2);">#8</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 74, "Def": 56, "Fis": 77, "Tec": 88, "Vel": 65}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>12</strong></div><div><span>Goles</span><strong>5</strong></div><div><span>Asist.</span><strong>4</strong></div><div><span>Tarjetas</span><strong>4</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="centrocampista" data-name="Mario Esteban">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">10</div>
+            <img src="assets/img/jugadores/p10-mario-esteban.jpg" alt="Foto de Mario Esteban" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Mario Esteban</div>
+              <div class="pf-pos">Centrocampista</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Mario Esteban <span style="color:var(--gold-2);">#10</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 69, "Def": 59, "Fis": 77, "Tec": 83, "Vel": 66}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>16</strong></div><div><span>Goles</span><strong>1</strong></div><div><span>Asist.</span><strong>2</strong></div><div><span>Tarjetas</span><strong>4</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="centrocampista" data-name="Sergio Lozano">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">14</div>
+            <img src="assets/img/jugadores/p14-sergio-lozano.jpg" alt="Foto de Sergio Lozano" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Sergio Lozano</div>
+              <div class="pf-pos">Centrocampista</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Sergio Lozano <span style="color:var(--gold-2);">#14</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 68, "Def": 56, "Fis": 78, "Tec": 81, "Vel": 64}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>15</strong></div><div><span>Goles</span><strong>4</strong></div><div><span>Asist.</span><strong>2</strong></div><div><span>Tarjetas</span><strong>0</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="centrocampista" data-name="Bruno Aranda">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">20</div>
+            <img src="assets/img/jugadores/p20-bruno-aranda.jpg" alt="Foto de Bruno Aranda" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Bruno Aranda</div>
+              <div class="pf-pos">Centrocampista</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Bruno Aranda <span style="color:var(--gold-2);">#20</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 74, "Def": 62, "Fis": 75, "Tec": 88, "Vel": 67}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>14</strong></div><div><span>Goles</span><strong>6</strong></div><div><span>Asist.</span><strong>4</strong></div><div><span>Tarjetas</span><strong>4</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="delantero" data-name="Álex Rey">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">7</div>
+            <img src="assets/img/jugadores/p07-alex-rey.jpg" alt="Foto de Álex Rey" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Álex Rey</div>
+              <div class="pf-pos">Delantero</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Álex Rey <span style="color:var(--gold-2);">#7</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 89, "Def": 35, "Fis": 80, "Tec": 79, "Vel": 79}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>18</strong></div><div><span>Goles</span><strong>6</strong></div><div><span>Asist.</span><strong>3</strong></div><div><span>Tarjetas</span><strong>3</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="delantero" data-name="Iván Cabrera">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">9</div>
+            <img src="assets/img/jugadores/p09-ivan-cabrera.jpg" alt="Foto de Iván Cabrera" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Iván Cabrera</div>
+              <div class="pf-pos">Delantero</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Iván Cabrera <span style="color:var(--gold-2);">#9</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 93, "Def": 35, "Fis": 69, "Tec": 72, "Vel": 89}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>17</strong></div><div><span>Goles</span><strong>9</strong></div><div><span>Asist.</span><strong>6</strong></div><div><span>Tarjetas</span><strong>3</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="delantero" data-name="Diego Roldán">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">11</div>
+            <img src="assets/img/jugadores/p11-diego-roldan.jpg" alt="Foto de Diego Roldán" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Diego Roldán</div>
+              <div class="pf-pos">Delantero</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Diego Roldán <span style="color:var(--gold-2);">#11</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 86, "Def": 35, "Fis": 74, "Tec": 82, "Vel": 83}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>12</strong></div><div><span>Goles</span><strong>12</strong></div><div><span>Asist.</span><strong>3</strong></div><div><span>Tarjetas</span><strong>1</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-flip" data-player-card data-pos="delantero" data-name="Samuel Peña">
+        <div class="player-flip-inner">
+          <div class="player-flip-front">
+            <div class="pf-num">17</div>
+            <img src="assets/img/jugadores/p17-samuel-pena.jpg" alt="Foto de Samuel Peña" loading="lazy">
+            <div class="pf-info">
+              <div class="pf-name">Samuel Peña</div>
+              <div class="pf-pos">Delantero</div>
+              <div class="pf-hint">Toca para ver estadísticas ↻</div>
+            </div>
+          </div>
+          <div class="player-flip-back">
+            <div class="pf-back-name">Samuel Peña <span style="color:var(--gold-2);">#17</span></div>
+            <svg class="pf-radar" viewBox="0 0 150 150" data-stats='{"Ataq": 91, "Def": 35, "Fis": 75, "Tec": 72, "Vel": 81}'></svg>
+            <div class="pf-stats-mini"><div><span>Partidos</span><strong>18</strong></div><div><span>Goles</span><strong>9</strong></div><div><span>Asist.</span><strong>2</strong></div><div><span>Tarjetas</span><strong>1</strong></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">
+        <svg class="brand-crest" aria-hidden="true"><use href="#crest"></use></svg>
+        <span class="brand-text">
+          <span class="brand-name">Atlético Riomar</span>
+          <span class="brand-sub">Club Deportivo · 1978</span>
+        </span>
+      </a>
+      <p>Club de fútbol amateur de Riomar. Primer equipo, escuela de base y una afición que no falla.</p>
+      <p class="perf-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Rendimiento 100/100 · Web optimizada</p>
+    </div>
+    <div class="footer-col">
+      <h4>Club</h4>
+      <ul>
+        <li><a href="club.html">Historia</a></li>
+        <li><a href="plantilla.html">Plantilla</a></li>
+        <li><a href="cantera.html">Cantera</a></li>
+        <li><a href="index.html#patrocinadores">Patrocinadores</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Actualidad</h4>
+      <ul>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="matchcenter.html">Matchcenter</a></li>
+        <li><a href="calendario.html">Calendario y resultados</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+34611223344">611 22 33 44</a></li>
+        <li><a href="mailto:info@atleticoriomar-ejemplo.com">info@atleticoriomar-ejemplo.com</a></li>
+        <li><a href="contacto.html">Av. del Deporte 12, Riomar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span data-year>2026</span> Atlético Riomar. Todos los derechos reservados. · Versión Pro</p>
+    <div class="footer-bottom-right">
+      <a href="creditos.html">Créditos fotográficos →</a>
+      <span class="footer-dev">Desarrollado por <a href="https://coachbase.example.com" target="_blank" rel="noopener">CoachBase</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="chat-bubble" data-chat-bubble aria-label="Abrir chat de ayuda">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</div>
+<div class="chat-panel" data-chat-panel>
+  <div class="chat-panel-head"><span>Asistente del club</span><button type="button" data-chat-close aria-label="Cerrar chat" style="background:none;border:0;color:#fff;font-size:1.2rem;cursor:pointer;">&times;</button></div>
+  <div class="chat-panel-body" data-chat-body>
+    <div class="chat-msg bot">¡Hola! Soy el asistente virtual del Atlético Riomar. Pregúntame por horarios, inscripciones o cómo llegar al campo.</div>
+  </div>
+  <div class="chat-panel-quick" data-chat-quick>
+    <button class="chat-quick-btn" type="button" data-q="horarios">Horarios de entreno</button>
+    <button class="chat-quick-btn" type="button" data-q="inscripcion">Cómo inscribirme</button>
+    <button class="chat-quick-btn" type="button" data-q="ubicacion">Cómo llegar</button>
+    <button class="chat-quick-btn" type="button" data-q="socio">Hazte socio</button>
+  </div>
+</div>
+
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="lib/manifest.js"></script>
+<script defer src="main.js?v=1"></script>
+</body>
+</html>
