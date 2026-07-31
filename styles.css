@@ -1430,6 +1430,8 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
   display: grid; place-items: center; font-family: var(--display); font-size: .95rem; flex: none;
 }
 .staff-card strong { display: block; font-size: .94rem; }
+.staff-avatar { overflow: hidden; }
+.staff-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
 .staff-card span { font-size: .78rem; color: var(--mute); }
 
 /* ---- 11.7 Patrocinadores por niveles ---- */
@@ -1552,6 +1554,18 @@ body.is-leaving { animation: pageFadeOut .35s ease forwards; }
 .pro-cursor.is-visible { opacity: 1; }
 .pro-cursor.is-active { width: 48px; height: 48px; background: rgba(201,162,39,.25); }
 @media (hover: none), (pointer: coarse) { .pro-cursor { display: none; } }
+
+/* Balón difuminado: solo se insinúa al pasar sobre elementos interactivos, en reposo el cursor es el aro fino de siempre */
+.pro-cursor::before {
+  content: "";
+  position: absolute; inset: -11px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23F6F7FA'/%3E%3Cpolygon points='32,14 42,22 38,34 26,34 22,22' fill='%230B1220'/%3E%3Cpolygon points='32,50 22,42 26,34 38,34 42,42' fill='%230B1220'/%3E%3Cpolygon points='10,26 20,22 26,34 18,44 8,40' fill='%230B1220'/%3E%3Cpolygon points='54,26 44,22 38,34 46,44 56,40' fill='%230B1220'/%3E%3C/svg%3E");
+  background-size: contain; background-repeat: no-repeat; border-radius: 50%;
+  filter: blur(7px); mix-blend-mode: difference;
+  opacity: 0; transform: scale(.55) rotate(0deg);
+  transition: opacity .35s ease, transform .6s cubic-bezier(.2,.8,.2,1);
+}
+.pro-cursor.is-active::before { opacity: .6; transform: scale(1) rotate(230deg); }
 
 /* ---- 12.5 Botones magnéticos ---- */
 .magnetic { position: relative; display: inline-flex; transition: transform .25s cubic-bezier(.2,.8,.2,1); }
